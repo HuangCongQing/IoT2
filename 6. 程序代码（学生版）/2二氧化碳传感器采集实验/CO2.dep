@@ -6,32 +6,32 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\sys_init.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
       <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
       <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\source\sys_init.c</file>
-      <file>$PROJ_DIR$\source\sys_init.h</file>
       <file>$PROJ_DIR$\source\uart.c</file>
       <file>$PROJ_DIR$\source\uart.h</file>
+      <file>$PROJ_DIR$\source\sys_init.c</file>
+      <file>$PROJ_DIR$\source\sys_init.h</file>
+      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\sys_init.pbi</file>
       <file>$PROJ_DIR$\source\AM2321b.h</file>
       <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\CO2.pbd</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
-      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
       <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
       <file>$PROJ_DIR$\source\SHT10.h</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\SHT10.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\AM2321b.r51</file>
-      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
-      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
+      <file>$PROJ_DIR$\source\SHT10.c</file>
       <file>$PROJ_DIR$\Debug\Obj\SHT10.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\sys_init.r51</file>
       <file>$PROJ_DIR$\source\AM2321b.c</file>
       <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
-      <file>$PROJ_DIR$\source\SHT10.c</file>
       <file>$PROJ_DIR$\Debug\Obj\AM2321b.pbi</file>
       <file>$PROJ_DIR$\Debug\Exe\Fan.d51</file>
     </outputs>
@@ -39,22 +39,45 @@
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 21</file>
+          <name>ICC8051</name>
+          <file> 8</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 1</file>
+          <name>BICOMP</name>
+          <file> 22</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 11 13 2 19 5 7</file>
+          <name>ICC8051</name>
+          <file> 7 13 0 18 5 3</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 7 13 0 18 5 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\source\uart.c</name>
+      <outputs>
+        <tool>
           <name>ICC8051</name>
-          <file> 11 13 2 19 5 7</file>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 18 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 3</file>
         </tool>
       </inputs>
     </file>
@@ -62,54 +85,22 @@
       <name>$PROJ_DIR$\source\sys_init.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 0</file>
-        </tool>
-        <tool>
           <name>ICC8051</name>
-          <file> 22</file>
+          <file> 23</file>
         </tool>
-      </outputs>
-      <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 19 5</file>
-        </tool>
-        <tool>
-          <name>ICC8051</name>
-          <file> 19 5</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 27 18</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\source\uart.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 24</file>
-        </tool>
-        <tool>
-          <name>ICC8051</name>
           <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 19 7</file>
+          <name>ICC8051</name>
+          <file> 18 5</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 19 7</file>
+          <name>BICOMP</name>
+          <file> 18 5</file>
         </tool>
       </inputs>
     </file>
@@ -118,30 +109,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 21 0 24</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\source\AM2321b.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 26</file>
-        </tool>
-        <tool>
-          <name>ICC8051</name>
-          <file> 16</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8 19</file>
-        </tool>
-        <tool>
-          <name>ICC8051</name>
-          <file> 8 19</file>
+          <file> 22 9 25</file>
         </tool>
       </inputs>
     </file>
@@ -149,22 +117,54 @@
       <name>$PROJ_DIR$\source\SHT10.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 20</file>
+          <name>ICC8051</name>
+          <file> 16</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
-          <file> 15</file>
+          <name>BICOMP</name>
+          <file> 21</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 14 19</file>
+          <name>ICC8051</name>
+          <file> 14 18</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 14 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 27 19</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\source\AM2321b.c</name>
+      <outputs>
+        <tool>
           <name>ICC8051</name>
-          <file> 14 19</file>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 10 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 18</file>
         </tool>
       </inputs>
     </file>
@@ -173,13 +173,13 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 18</file>
+          <file> 19</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 12 1 22 9 17</file>
+          <file> 6 8 23 11 15</file>
         </tool>
       </inputs>
     </file>
@@ -200,21 +200,21 @@
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 7</file>
-        </tool>
-        <tool>
           <name>ICC8051</name>
           <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
+          <name>ICC8051</name>
           <file> 3</file>
         </tool>
         <tool>
-          <name>ICC8051</name>
+          <name>BICOMP</name>
           <file> 3</file>
         </tool>
       </inputs>

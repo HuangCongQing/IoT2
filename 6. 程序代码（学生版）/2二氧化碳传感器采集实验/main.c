@@ -13,7 +13,13 @@ __near_func int putchar(int ch)
 
 void Photoresistance_Test(void)
 {
-
+  char StrAdc[10];
+  int AdcValue; 
+  
+  AdcValue = getADC();
+  sprintf(StrAdc,"%d\r\n",AdcValue);
+  printf("%s",StrAdc);                //串口发送数据
+  delay(10000);                      //延时 
 }
 
 /*得到ADC值
@@ -40,6 +46,11 @@ int getADC(void)
 
 void main(void)
 {
- 
+  xtal_init();             //系统时钟初始化       
+  uart0_init(0x00,0x00);  //初始化串口：无奇偶校验，停止位为1位      
+  while(1)
+  {           
+   Photoresistance_Test();
+  }
 }    
     
