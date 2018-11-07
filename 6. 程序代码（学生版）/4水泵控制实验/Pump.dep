@@ -6,55 +6,46 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\sys_init.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
       <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
       <file>$PROJ_DIR$\main.c</file>
       <file>$PROJ_DIR$\source\sys_init.c</file>
       <file>$PROJ_DIR$\source\sys_init.h</file>
       <file>$PROJ_DIR$\source\uart.c</file>
       <file>$PROJ_DIR$\source\uart.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
-      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\sys_init.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\Pump.pbd</file>
       <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
       <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\sys_init.r51</file>
       <file>$PROJ_DIR$\Debug\Exe\Fan.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\sys_init.r51</file>
     </outputs>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 18 1</file>
-        </tool>
-      </outputs>
-    </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 14</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
           <file> 12</file>
+        </tool>
+        <tool>
+          <name>ICC8051</name>
+          <file> 14</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 11 16 10 5 7</file>
+          <name>BICOMP</name>
+          <file> 7 16 8 3 5</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 11 16 10 5 7</file>
+          <name>ICC8051</name>
+          <file> 7 16 8 3 5</file>
         </tool>
       </inputs>
     </file>
@@ -62,22 +53,22 @@
       <name>$PROJ_DIR$\source\sys_init.c</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 17</file>
+          <name>BICOMP</name>
+          <file> 11</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 0</file>
+          <name>ICC8051</name>
+          <file> 18</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 11 5</file>
+          <name>BICOMP</name>
+          <file> 7 3</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 11 5</file>
+          <name>ICC8051</name>
+          <file> 7 3</file>
         </tool>
       </inputs>
     </file>
@@ -85,22 +76,22 @@
       <name>$PROJ_DIR$\source\uart.c</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 8</file>
+          <name>BICOMP</name>
+          <file> 0</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 2</file>
+          <name>ICC8051</name>
+          <file> 10</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 11 7</file>
+          <name>BICOMP</name>
+          <file> 7 5</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 11 7</file>
+          <name>ICC8051</name>
+          <file> 7 5</file>
         </tool>
       </inputs>
     </file>
@@ -109,7 +100,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 12 0 2</file>
+          <file> 12 11 0</file>
         </tool>
       </inputs>
     </file>
@@ -118,67 +109,58 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 1</file>
+          <file> 6</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 9 14 17 8 15</file>
+          <file> 9 14 18 10 15</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 17 6</file>
+        </tool>
+      </outputs>
     </file>
   </configuration>
   <configuration>
     <name>Release</name>
     <outputs>
       <file>$PROJ_DIR$\main.c</file>
-      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
+      <file>$PROJ_DIR$\Release\Exe\Fan.a51</file>
       <file>$PROJ_DIR$\Release\Obj\main.r51</file>
       <file>$PROJ_DIR$\Release\Obj\Pump.pbd</file>
       <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Release\Exe\Fan.a51</file>
     </outputs>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 7</file>
-        </tool>
-      </outputs>
-    </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 4</file>
+          <name>BICOMP</name>
+          <file> 7</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 6</file>
+          <name>ICC8051</name>
+          <file> 5</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 2</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 2</file>
+          <file> 1</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Release\Obj\Pump.pbd</name>
-      <inputs>
         <tool>
-          <name>BILINK</name>
-          <file> 6</file>
+          <name>ICC8051</name>
+          <file> 1</file>
         </tool>
       </inputs>
     </file>
@@ -187,9 +169,27 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 1 4 3</file>
+          <file> 2 5 3</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\Pump.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
     </file>
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
