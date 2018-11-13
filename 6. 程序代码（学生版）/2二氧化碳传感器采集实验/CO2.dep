@@ -13,20 +13,20 @@
       <file>$PROJ_DIR$\source\sys_init.c</file>
       <file>$PROJ_DIR$\source\sys_init.h</file>
       <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\sys_init.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$PROJ_DIR$\source\SHT10.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
       <file>$PROJ_DIR$\source\AM2321b.h</file>
       <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\CO2.pbd</file>
-      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
-      <file>$PROJ_DIR$\source\SHT10.h</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
       <file>$PROJ_DIR$\Debug\Obj\SHT10.r51</file>
       <file>$PROJ_DIR$\Debug\Obj\AM2321b.r51</file>
-      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
-      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
       <file>$PROJ_DIR$\source\SHT10.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\Fan.hex</file>
       <file>$PROJ_DIR$\Debug\Obj\SHT10.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\sys_init.r51</file>
@@ -50,11 +50,11 @@
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 7 13 0 18 5 3</file>
+          <file> 11 9 0 16 5 3</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 7 13 0 18 5 3</file>
+          <file> 11 9 0 16 5 3</file>
         </tool>
       </inputs>
     </file>
@@ -63,7 +63,7 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 11</file>
+          <file> 13</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -73,11 +73,11 @@
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 18 3</file>
+          <file> 16 3</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 18 3</file>
+          <file> 16 3</file>
         </tool>
       </inputs>
     </file>
@@ -90,26 +90,35 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 9</file>
+          <file> 7</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 18 5</file>
+          <file> 16 5</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 18 5</file>
+          <file> 16 5</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 27 20</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Debug\Obj\CO2.pbd</name>
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 22 9 25</file>
+          <file> 22 7 25</file>
         </tool>
       </inputs>
     </file>
@@ -118,7 +127,7 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 16</file>
+          <file> 17</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -128,29 +137,20 @@
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 14 18</file>
+          <file> 10 16</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 14 18</file>
+          <file> 10 16</file>
         </tool>
       </inputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 27 19</file>
-        </tool>
-      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\source\AM2321b.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 17</file>
+          <file> 18</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -160,11 +160,11 @@
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 10 18</file>
+          <file> 12 16</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 10 18</file>
+          <file> 12 16</file>
         </tool>
       </inputs>
     </file>
@@ -173,13 +173,13 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 19</file>
+          <file> 20</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 6 8 23 11 15</file>
+          <file> 6 8 23 13 15</file>
         </tool>
       </inputs>
     </file>
@@ -188,34 +188,34 @@
     <name>Release</name>
     <outputs>
       <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Release\Exe\Fan.a51</file>
+      <file>$PROJ_DIR$\Release\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
       <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
       <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
       <file>$PROJ_DIR$\Release\Obj\CO2.pbd</file>
-      <file>$PROJ_DIR$\Release\Exe\Fan.a51</file>
-      <file>$PROJ_DIR$\Release\Obj\main.r51</file>
-      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 6</file>
+          <file> 2</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 7</file>
+          <file> 3</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 3</file>
+          <file> 6</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 3</file>
+          <file> 6</file>
         </tool>
       </inputs>
     </file>
@@ -224,25 +224,25 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 5</file>
+          <file> 1</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Release\Obj\CO2.pbd</name>
-      <inputs>
-        <tool>
-          <name>BILINK</name>
-          <file> 7</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Release\Exe\Fan.a51</name>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 1 6 2</file>
+          <file> 4 2 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\CO2.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 3</file>
         </tool>
       </inputs>
     </file>

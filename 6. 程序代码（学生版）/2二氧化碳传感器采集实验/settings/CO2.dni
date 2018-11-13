@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-402549046
+Checksum=161042201
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -9,9 +9,6 @@ Enabled=_ 0
 Enabled=_ 0
 [Profiling]
 Enabled=0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [StackPlugin]
 Enabled=1
 OverflowWarningsEnabled=1
@@ -26,10 +23,13 @@ ByteLimit=50
 LoggingEnabled=_ 0
 LogFile=_ ""
 Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Breakpoints]
 Count=0
 [ChipconEmu]
-Stop timers on halt=0
+Stop timers on halt=1
 Leave target running=1
 [Aliases]
 Count=0
