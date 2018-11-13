@@ -1,7 +1,8 @@
 [DebugChecksum]
-Checksum=386911545
+Checksum=-70502863
 [DisAssemblyWindow]
-NumStates=_ 0
+NumStates=_ 1
+State 1=_ 1
 [InstructionProfiling]
 Enabled=_ 0
 [CodeCoverage]
@@ -30,20 +31,22 @@ ActionState=1
 [TraceHelper]
 Enabled=0
 ShowSource=1
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
 Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [Breakpoints]
 Count=0
 [ChipconEmu]
-Stop timers on halt=0
+Stop timers on halt=1
 Leave target running=1
 [Aliases]
 A0=_ "C:\Users\lenovo\Desktop\执行器232通信\Fan\source\sys_init.c" ""
 A1=_ "C:\Users\lenovo\Desktop\执行器232通信\Fan\source\uart.c" ""
-Count=2
+A2=_ "H:\6. 程序代码（学生版）\排风扇控制实验\source\sys_init.c" ""
+A3=_ "H:\6. 程序代码（学生版）\排风扇控制实验\source\uart.c" ""
+Count=4
 SuppressDialog=0
