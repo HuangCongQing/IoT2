@@ -4,6 +4,11 @@
 **PLUS**
 * 波特率设置“19200”；
 * `delay_ms(10000);`延迟1万ms,就是延迟10s
+
+链接：https://pan.baidu.com/s/1HdEtRN52FQckb0MaRqsdFw 
+提取码：2v2q 
+复制这段内容后打开百度网盘手机App，操作更方便哦
+
 ### 实验
 
 * 加热器控制实验
